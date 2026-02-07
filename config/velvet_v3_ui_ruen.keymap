@@ -128,7 +128,7 @@
 &kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                        &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA      &kp RU_CYRILLIC_ZE   &kp BSPC
 &kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                        &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE         &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
 &kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                         &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU         &trans               &trans
-                                    &kp LALT              &kp LGUI            &kp LCTRL           &mo 2               &kp SPACE    &kp RET  &mo 4               &none                      &kp RU_CYRILLIC_HA   &kp RU_CYRILLIC_HARD_SIGN
+                                    &kp LALT              &kp LGUI            &kp LCTRL           &mo 2               &kp SPACE    &kp RET  &mo 5               &none                      &kp RU_CYRILLIC_HA   &kp RU_CYRILLIC_HARD_SIGN
             >;
         };
 
@@ -137,7 +137,7 @@
 &kp LC(LA(DELETE))  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                     &kp N6         &kp N7        &kp N8        &kp N9        &kp N0  &trans
 &kp CAPSLOCK        &none   &kp HOME  &kp UP    &kp END    &kp RET                    &kp PAGE_UP    &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP  &none   &none
 &trans              &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL                    &kp PAGE_DOWN  &none         &kp RU_COMMA  &kp RU_DOT    &trans  &trans
-                            &trans    &trans    &trans     &trans   &trans    &trans  &mo 5          &trans        &trans        &trans
+                            &trans    &trans    &trans     &trans   &trans    &trans  &mo 4          &trans        &trans        &trans
             >;
 
             display-name = "Nav";
@@ -148,31 +148,31 @@
 &kp TILDE  &none  &none   &none   &kp LEFT_PARENTHESIS  &kp GRAVE                    &kp UNDERSCORE  &kp RIGHT_PARENTHESIS  &none  &none  &trans  &trans
 &trans     &none  &none   &none   &kp LEFT_BRACKET      &kp PLUS                     &kp MINUS       &kp RIGHT_BRACKET      &none  &none  &none   &none
 &trans     &none  &none   &none   &kp LT                &kp STAR                     &kp EQUAL       &kp GT                 &none  &none  &none   &trans
-                  &trans  &trans  &trans                &mo 5      &trans    &trans  &trans          &trans                 &none  &none
+                  &trans  &trans  &trans                &mo 4      &trans    &trans  &trans          &trans                 &none  &none
             >;
 
             display-name = "Symbols";
+        };
+
+        adj {
+            bindings = <
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                      &kp F7        &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR                  &out OUT_BLE  &none   &none   &none    &none    &studio_unlock
+&none         &none         &none         &none         &none         &none                       &out OUT_USB  &none   &none   &none    &none    &bootloader
+                            &none         &none         &none         &none       &none    &none  &none         &none   &none   &none
+            >;
+
+            display-name = "Adjust";
         };
 
         sym_ru {
             display-name = "Symbols";
             bindings = <
-&kp RU_CYRILLIC_IO  &en HASH          &en LT    &kp EQUAL     &en GT       &en GRAVE                    &en CARET  &kp RU_DQT  &kp UNDER    &en SQT   &trans      &trans
-&kp RU_NUMERO       &kp RU_BACKSLASH  &kp LPAR  &kp MINUS     &kp RPAR     &kp PLUS                     &kp PRCNT  &en LBRC    &kp RU_SEMI  &kp RBRC  &kp EXCL    &kp RU_QMARK
-&trans              &kp RU_COMMA      &kp STAR  &kp RU_COLON  &kp RU_FSLH  &en DLLR                     &en AT     &en PIPE    &en TILDE    &en AMPS  &kp RU_DOT  &trans
-                                      &trans    &trans        &trans       &mo 5      &trans    &trans  &trans     &trans      &en LBKT     &en RBKT
+&en TILDE  &none  &none   &none   &kp LPAR  &en GRAVE                    &kp UNDER  &kp RPAR  &none  &none  &trans  &trans
+&none      &none  &none   &none   &en LBKT  &kp PLUS                     &kp MINUS  &en RBKT  &none  &none  &none   &none
+&trans     &none  &none   &none   &en LT    &kp STAR                     &kp EQUAL  &en GT    &none  &none  &none   &trans
+                  &trans  &trans  &trans    &mo 4      &trans    &trans  &trans     &trans    &none  &none
             >;
-        };
-
-        adj {
-            bindings = <
-&kp F1       &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&none        &none   &none   &none   &none   &none                   &out OUT_BLE  &none         &none         &none         &none         &studio_unlock
-&bootloader  &none   &none   &none   &none   &none                   &out OUT_USB  &none         &none         &none         &none         &none
-                     &none   &none   &none   &none   &none    &none  &none         &none         &none         &none
-            >;
-
-            display-name = "Adjust";
         };
 
         mouse {
