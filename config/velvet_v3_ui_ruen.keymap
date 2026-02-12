@@ -134,10 +134,10 @@
 
         nav {
             bindings = <
-&kp LC(LA(DELETE))  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                     &kp N6         &kp N7        &kp N8        &kp N9        &kp N0  &trans
-&kp CAPSLOCK        &none   &kp HOME  &kp UP    &kp END    &kp RET                    &kp PAGE_UP    &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP  &none   &none
-&trans              &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL                    &kp PAGE_DOWN  &none         &kp RU_COMMA  &kp RU_DOT    &trans  &trans
-                            &trans    &trans    &trans     &trans   &trans    &trans  &mo 4          &trans        &trans        &trans
+&kp LG(SPACE)  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                     &kp N6         &kp N7        &kp N8        &kp N9        &kp N0  &trans
+&kp CAPSLOCK   &none   &kp HOME  &kp UP    &kp END    &kp RET                    &kp PAGE_UP    &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP  &none   &none
+&trans         &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL                    &kp PAGE_DOWN  &none         &kp RU_COMMA  &kp RU_DOT    &trans  &trans
+                       &trans    &trans    &trans     &trans   &trans    &trans  &mo 6          &trans        &trans        &trans
             >;
 
             display-name = "Nav";
@@ -148,10 +148,20 @@
 &kp TILDE  &none  &none   &none   &kp LEFT_PARENTHESIS  &kp GRAVE                    &kp UNDERSCORE  &kp RIGHT_PARENTHESIS  &none  &none  &trans  &trans
 &trans     &none  &none   &none   &kp LEFT_BRACKET      &kp PLUS                     &kp MINUS       &kp RIGHT_BRACKET      &none  &none  &none   &none
 &trans     &none  &none   &none   &kp LT                &kp STAR                     &kp EQUAL       &kp GT                 &none  &none  &none   &trans
-                  &trans  &trans  &trans                &mo 4      &trans    &trans  &trans          &trans                 &none  &none
+                  &trans  &trans  &trans                &mo 6      &trans    &trans  &trans          &trans                 &none  &none
             >;
 
             display-name = "Symbols";
+        };
+
+        sym_ru {
+            display-name = "Symbols";
+            bindings = <
+&en TILDE  &none  &none   &none   &kp LPAR  &en GRAVE                    &kp UNDER  &kp RPAR  &none  &none  &trans  &trans
+&none      &none  &none   &none   &en LBKT  &kp PLUS                     &kp MINUS  &en RBKT  &none  &none  &none   &none
+&trans     &none  &none   &none   &en LT    &kp STAR                     &kp EQUAL  &en GT    &none  &none  &none   &trans
+                  &trans  &trans  &trans    &mo 6      &trans    &trans  &trans     &trans    &none  &none
+            >;
         };
 
         adj {
@@ -163,16 +173,6 @@
             >;
 
             display-name = "Adjust";
-        };
-
-        sym_ru {
-            display-name = "Symbols";
-            bindings = <
-&en TILDE  &none  &none   &none   &kp LPAR  &en GRAVE                    &kp UNDER  &kp RPAR  &none  &none  &trans  &trans
-&none      &none  &none   &none   &en LBKT  &kp PLUS                     &kp MINUS  &en RBKT  &none  &none  &none   &none
-&trans     &none  &none   &none   &en LT    &kp STAR                     &kp EQUAL  &en GT    &none  &none  &none   &trans
-                  &trans  &trans  &trans    &mo 4      &trans    &trans  &trans     &trans    &none  &none
-            >;
         };
 
         mouse {
