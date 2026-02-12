@@ -135,7 +135,7 @@
         nav {
             bindings = <
 &kp LG(SPACE)  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                     &kp N6         &kp N7        &kp N8        &kp N9        &kp N0  &trans
-&kp CAPSLOCK   &none   &kp HOME  &kp UP    &kp END    &kp RET                    &kp PAGE_UP    &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP  &none   &none
+&kp CAPSLOCK   &none   &kp HOME  &kp UP    &kp END    &kp RET                    &kp PAGE_UP    &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP  &none   &kp LC(LA(DELETE))
 &trans         &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL                    &kp PAGE_DOWN  &none         &kp RU_COMMA  &kp RU_DOT    &trans  &trans
                        &trans    &trans    &trans     &trans   &trans    &trans  &mo 6          &trans        &trans        &trans
             >;
