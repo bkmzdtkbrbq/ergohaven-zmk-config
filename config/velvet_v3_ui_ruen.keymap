@@ -135,8 +135,8 @@
         nav {
             bindings = <
 &kp GLOBE     &none  &none     &kp LC(UP)  &kp LA(D)  &none                     &kp PAGE_UP    &kp LG(LEFT)  &kp UP    &kp LG(RIGHT)  &none  &kp DEL
-&kp CAPSLOCK  &mo 7  &mkp MB3  &mkp MB2    &mkp MB1   &mo 8                     &kp PAGE_DOWN  &kp LEFT      &kp DOWN  &kp RIGHT      &none  &none
-&trans        &none  &none     &none       &none      &none                     &none          &none         &none     &none          &none  &mo 8
+&kp CAPSLOCK  &mo 7  &mkp MB3  &mkp MB2    &mkp MB1   &none                     &kp PAGE_DOWN  &kp LEFT      &kp DOWN  &kp RIGHT      &none  &none
+&trans        &mo 8  &none     &none       &none      &none                     &none          &none         &none     &none          &none  &mo 8
                      &trans    &trans      &trans     &trans  &trans    &trans  &mo 5          &none         &none     &none
             >;
 
@@ -177,10 +177,10 @@
 
         mouse {
             bindings = <
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-              &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
+              &none  &none  &none  &trans  &none    &none  &none  &none  &none  &none
             >;
 
             display-name = "Mouse";
